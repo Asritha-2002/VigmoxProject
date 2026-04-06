@@ -10,7 +10,7 @@ dotenv.config();
 
 // Create Express app
 const app = express();
-const PORT = process.env.PORT_SERVER;
+const PORT = process.env.PORT;
 
 // Middleware setup
 app.use(express.json());
