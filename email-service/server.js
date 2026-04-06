@@ -5,7 +5,7 @@ const { sendVerificationEmail } = require('./emails'); // your updated file
 const app = express();
 app.use(express.json());
 
-console.log("SENDGRID KEY:", process.env.SENDGRID_API_KEY);
+console.log("SendGrid key starts with:", process.env.SENDGRID_API_KEY?.slice(0, 6));
 app.post('/send-email', async (req, res) => {
   try {
     const { email, token } = req.body;
