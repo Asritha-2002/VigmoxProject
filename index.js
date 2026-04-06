@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
 
 // Database connection with retry logic
 const connectDB = async (retries = 5) => {
-    const dbURI = process.env.NODE_ENV === 'development' 
+    const dbURI = process.env.NODE_ENV === 'production' 
         ? process.env.MONGODB_URI_PROD 
         : process.env.MONGODB_URI_TEST || 'mongodb://localhost:27017/bookstore';
 
