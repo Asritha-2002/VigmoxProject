@@ -1,0 +1,12 @@
+/node_modules/*
+/dist/*
+/public/*
+.env
+models/*
+!models/User.js
+original.js
+routes/*
+!routes/userRoutes.js
+middleware/upload
+email-service/.env
+frontend/*
